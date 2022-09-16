@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: #262262;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+
+}
+
+.navbar{
+    min-height: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+}
+
+.nav_menu{
+    height: 100%;
+    display: block;
+    /* justify-content: space-between; */
+    align-items: top;
+    gap: 50px;
+}
+
+.logo{
+    font-size: 3rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.nav_menu{
+    transition: 0.7s ease;
+}
+
+.nav_menu :hover{
+    color: dodgerblue;
+}
+
+.hamburger{
+    display: inline-block;
+    cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+    display: block;
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+
+/* Rotate first bar */
+.change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+  }
+  
+  /* Fade out the second bar */
+  .change .bar2 {opacity: 0;}
+  
+  /* Rotate last bar */
+  .change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+  }
+
+
+  .nav_menu{
+    position: fixed;
+    left: -100%;
+    top: 0px;
+    flex-direction: row;
+    background-color:darkslategray;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+  }
+
+.navitem{
+    margin: 16px 0;
+}
+
+
+.nav_menu.active{
+    position: absolute;
+    left: 0;
+}
+
+
+.main-body{
+    margin-top: 7px;
+    margin-left: 10px;
+}
+
+
+.input-block{
+    margin-top: 10px;
+    outline: none;
+
+}
+
+.clearall{
+    margin-top: 10px;
+}
+
+input[type=text] {
+    color: rgb(13, 13, 13);
+    border: 3px solid #555;
+  }
+
+  input[type=text] {
+    background-color: white;
+    background-image: url('5402441_magnifier_out_zoom_find_magnifying glass_icon.png');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+  }
+
+  .btn{
+    background-color:lightblue ;
+    border: 3px solid #555;
+  }
+
+  .clearall{
+    background-color:lightblue ;
+    border: 3px solid #555;
+  }
